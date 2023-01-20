@@ -98,7 +98,7 @@ body {
   padding: 10px 41px 10px 42px;
 }
 .footer-background button {
-  padding: 10px 76px 10px 42px;
+  padding: 10px 28px 10px 42px;
 }
 .cards button {
   background-color: var(--background-color-employees, #f5f4fa);
@@ -542,7 +542,11 @@ button::first-letter {
 .item-nav > .hover-portfolio {
   color: var(--font-color-action);
 }
-.newsletter {
-  height: 50px;
-  width: 358px;
+.test {
+  /* display: block; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 24px;
 }
