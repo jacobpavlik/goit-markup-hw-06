@@ -15,9 +15,9 @@
   margin: 0;
   padding: 0;
 }
-svg {
+/* svg {
   color: var(--font-color-active);
-}
+} */
 a {
   text-decoration: none;
 }
@@ -80,6 +80,7 @@ body {
 .nav-flex {
   display: flex;
 }
+.footer-background button,
 .section-slogan button {
   color: var(--background-color-primary, #ffffff);
   background-color: var(--font-color-action, #2196f3);
@@ -89,9 +90,15 @@ body {
   line-height: 1.87;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  padding: 10px 41px 10px 42px;
+  /* padding: 10px 41px 10px 42px; */
   border-width: 0;
   box-shadow: 0px 4px 4px #00000026;
+}
+.section-slogan button {
+  padding: 10px 41px 10px 42px;
+}
+.footer-background button {
+  padding: 10px 76px 10px 42px;
 }
 .cards button {
   background-color: var(--background-color-employees, #f5f4fa);
@@ -496,7 +503,7 @@ button::first-letter {
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
     0px 2px 1px #00000033;
   border-radius: 4px;
-  position: relative;
+  position: fixed;
 }
 .label {
   position: absolute;
@@ -534,4 +541,8 @@ button::first-letter {
 }
 .item-nav > .hover-portfolio {
   color: var(--font-color-action);
+}
+.newsletter {
+  height: 50px;
+  width: 358px;
 }
