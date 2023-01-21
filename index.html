@@ -389,7 +389,7 @@
             <input
               id="newsletter"
               type="email"
-              name="userEmail"
+              name="userEmailNewsletter"
               placeholder="E-mail"
             />
             <button type="submit">
@@ -412,6 +412,39 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p>zostaw swoje dane w formularzu poniżej</p>
+        <form>
+          <label for="name">imię</label>
+          <input id="name" type="text" name="userName" />
+        </form>
+        <form>
+          <label for="telephon">telefon</label>
+          <input id="telephone" type="tel" name="userPhone" />
+        </form>
+        <form>
+          <label for="emailaddress">email</label>
+          <input id="emailaddress" type="email" name="userEmail" />
+        </form>
+        <form>
+          <label for="reviewarea">komentarz</label>
+          <textarea
+            class="textarea-form"
+            id="reviewarea"
+            placeholder="Wprowadź tekst"
+            name="userReview"
+          ></textarea>
+        </form>
+        <form>
+          <input
+            id="acceptance-rules"
+            type="checkbox"
+            name="acceptanceOfTheRules"
+          />
+          <label for="acceptance-rules"
+            >oświadczam, iż akceptuję <span>regulamin</span> i
+            <span>politykę prywatności</span></label
+          >
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

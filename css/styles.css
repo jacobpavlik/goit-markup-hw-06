@@ -545,3 +545,8 @@ button::first-letter {
   vertical-align: middle;
   margin-left: 24px;
 }
+.textarea-form {
+  width: 448px;
+  height: 120px;
+  resize: none;
+}
