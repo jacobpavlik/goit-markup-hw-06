@@ -90,7 +90,6 @@ body {
   line-height: 1.87;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  /* padding: 10px 41px 10px 42px; */
   border-width: 0;
   box-shadow: 0px 4px 4px #00000026;
 }
@@ -542,11 +541,7 @@ button::first-letter {
 .item-nav > .hover-portfolio {
   color: var(--font-color-action);
 }
-.test {
-  /* display: block; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.icon-button {
   vertical-align: middle;
   margin-left: 24px;
 }
