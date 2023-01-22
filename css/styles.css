@@ -550,3 +550,42 @@ button::first-letter {
   height: 120px;
   resize: none;
 }
+.box-rules {
+  appearance: none;
+}
+.label-rules {
+  position: relative;
+  cursor: pointer;
+  margin-left: 77px;
+}
+.label-rules::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  top: 3px;
+  left: -20px;
+  border: 1px solid var(--font-color-primary);
+}
+.box-rules:checked + .label-rules::before {
+  background-color: var(--font-color-action);
+  background-image: url(../images/icons.svg#icon-check-only2);
+  /* stroke: 1px; */
+  /* stroke-width: 1px; */
+  /* width: 300px; */
+  /* height: 300px; */
+  fill: red;
+  color: red;
+  outline: red;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid var(--font-color-action);
+}
+.test {
+  fill: blue;
+  /* color: red; */
+  /* outline: green; */
+}
