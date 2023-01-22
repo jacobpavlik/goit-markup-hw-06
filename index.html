@@ -382,11 +382,12 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="media-footer-container">
           <h3 class="card__footer">zapisz się do newslettera</h3>
-          <form name="signupForm">
+          <form name="signupForm" class="footer-form">
             <label for="newsletter"></label>
             <input
+              class="footer-input"
               id="newsletter"
               type="email"
               name="userEmailNewsletter"
@@ -412,27 +413,33 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p>zostaw swoje dane w formularzu poniżej</p>
-        <form>
-          <label for="name">imię</label>
-          <input id="name" type="text" name="userName" />
-        </form>
-        <form>
-          <label for="telephon">telefon</label>
-          <input id="telephone" type="tel" name="userPhone" />
-        </form>
-        <form>
-          <label for="emailaddress">email</label>
-          <input id="emailaddress" type="email" name="userEmail" />
-        </form>
-        <form>
-          <label for="reviewarea">komentarz</label>
-          <textarea
-            class="textarea-form"
-            id="reviewarea"
-            placeholder="Wprowadź tekst"
-            name="userReview"
-          ></textarea>
+        <form name="orderForm">
+          <div role="group" class="form-group" aria-labelledby="name-form">
+            <p>zostaw swoje dane w formularzu poniżej</p>
+            <p id="name-form">imię</p>
+            <label for="name"></label>
+            <input id="name" type="text" name="userName" />
+          </div>
+          <div role="group" class="form-group" aria-labelledby="tel-form">
+            <p id="tel-form">telefon</p>
+            <label for="telephon"></label>
+            <input id="telephone" type="tel" name="userPhone" />
+          </div>
+          <div role="group" class="form-group" aria-labelledby="email-form">
+            <p id="email-form">email</p>
+            <label for="emailaddress"></label>
+            <input id="emailaddress" type="email" name="userEmail" />
+          </div>
+          <div role="group" class="form-group" aria-labelledby="review-form">
+            <p id="review-form">komentarz</p>
+            <label for="reviewarea"></label>
+            <textarea
+              class="textarea-form"
+              id="reviewarea"
+              placeholder="Wprowadź tekst"
+              name="userReview"
+            ></textarea>
+          </div>
         </form>
         <form>
           <input
@@ -445,7 +452,7 @@
             >oświadczam, iż akceptuję <span>regulamin</span> i
             <span>politykę prywatności</span></label
           >
-          <svg class="test" width="30px" height="30px">
+          <svg class="test-icon" width="30px" height="30px">
             <use href="./images/icons.svg#icon-check-alone"></use>
           </svg>
         </form>
