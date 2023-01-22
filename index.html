@@ -452,21 +452,36 @@
               name="userReview"
             ></textarea>
           </div>
-        </form>
-        <form>
-          <input
-            class="box-rules"
-            id="acceptance-rules"
-            type="checkbox"
-            name="acceptanceOfTheRules"
-          />
-          <label for="acceptance-rules" class="label-rules"
-            >oświadczam, iż akceptuję <span>regulamin</span> i
-            <span>politykę prywatności</span></label
+          <div
+            role="group"
+            class="form-group"
+            aria-labelledby="acceptance-form"
           >
-          <svg class="test-icon" width="30px" height="30px">
-            <use href="./images/icons.svg#icon-check-alone"></use>
+            <p id="acceptance-form"></p>
+            <input
+              class="box-rules"
+              id="acceptance-rules"
+              type="checkbox"
+              name="acceptanceOfTheRules"
+            />
+            <label for="acceptance-rules" class="label-rules"
+              >oświadczam, iż akceptuję <span>regulamin</span> i
+              <span>politykę prywatności</span></label
+            >
+            <!--  <svg class="test-icon" width="30px" height="30px">
+            <use href="./images/icons.svg#icon-check-only2"></use>
           </svg>
+          <svg class="test-icon" width="30px" height="30px">
+            <use href="./images/icons.svg#icon-email-black"></use>
+          </svg>
+          <svg class="test-icon" width="30px" height="30px">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+          <svg class="test-icon" width="30px" height="30px">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg> -->
+          </div>
+          <!-- <button type="submit">wyślij</button> -->
         </form>
       </div>
     </div>
