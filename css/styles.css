@@ -510,6 +510,7 @@ button::first-letter {
     0px 2px 1px #00000033;
   border-radius: 4px;
   position: absolute;
+  padding: 40px;
 }
 .label {
   position: absolute;
@@ -616,6 +617,8 @@ button::first-letter {
   border-radius: 4px;
   background-color: var(--background-color-secondary);
   margin-right: 12px;
+  color: var(--background-color-employees);
+  outline: none;
 }
 .footer-form {
   display: flex;
@@ -634,6 +637,7 @@ button::first-letter {
   line-height: 1.17;
   letter-spacing: 0.16;
   padding: 10px 0 4px;
+  position: relative;
 }
 .modal-form-header::first-letter {
   text-transform: uppercase;
@@ -642,7 +646,6 @@ button::first-letter {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  margin-top: 40px;
 }
 .input-modal {
   width: 100%;
