@@ -594,17 +594,9 @@ button::first-letter {
 .icon-label {
   display: block;
   position: absolute;
-  left: 52px;
+  left: 15px;
+  top: 38px;
   fill: var(--font-color-primary);
-}
-.person {
-  top: 110px;
-}
-.phone {
-  top: 176px;
-}
-.email {
-  top: 242px;
 }
 .test-icon {
   fill: blue;
