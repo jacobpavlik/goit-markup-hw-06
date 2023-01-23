@@ -598,6 +598,43 @@ button::first-letter {
   background-repeat: no-repeat;
   border: 1px solid var(--font-color-action);
 }
+/* poniżej nieudana próba wsadzenia ikony jako ::before 601-621
+klasa icon-label-modal wrzucona do <label> */
+/*.icon-label-modal {
+  position: relative;
+  cursor: pointer;
+}
+.icon-label-modal::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: 50px;
+  background-image: url(../images/icons.svg#icon-person);
+  fill: red;
+  color: red;
+  outline: red;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*tu się kończy nieudana próba*/
+.icon-label {
+  display: block;
+  position: absolute;
+  left: 52px;
+}
+.person {
+  top: 110px;
+}
+.phone {
+  top: 176px;
+}
+.email {
+  top: 242px;
+}
 .test-icon {
   fill: blue;
   /* color: red; */
