@@ -553,7 +553,7 @@ button::first-letter {
   margin-left: 24px;
 }
 .textarea-form {
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
   font-size: 12px;
@@ -585,41 +585,11 @@ button::first-letter {
 .box-rules:checked + .label-rules::before {
   background-color: var(--font-color-action);
   background-image: url(../images/icons.svg#icon-check-only2);
-  /* stroke: 1px; */
-  /* stroke-width: 1px; */
-  /* width: 300px; */
-  /* height: 300px; */
-  fill: red;
-  color: red;
-  outline: red;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid var(--font-color-action);
 }
-/* poniżej nieudana próba wsadzenia ikony jako ::before 601-621
-klasa icon-label-modal wrzucona do <label> */
-/*.icon-label-modal {
-  position: relative;
-  cursor: pointer;
-}
-.icon-label-modal::before {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  top: 50px;
-  left: 50px;
-  background-image: url(../images/icons.svg#icon-person);
-  fill: red;
-  color: red;
-  outline: red;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-/*tu się kończy nieudana próba*/
 .icon-label {
   display: block;
   position: absolute;

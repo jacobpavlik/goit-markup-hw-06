@@ -417,70 +417,55 @@
           <p class="modal-form-header">
             zostaw swoje dane w formularzu poniżej
           </p>
-          <div role="group" class="form-group" aria-labelledby="name-form">
-            <p id="name-form">imię</p>
-            <label for="name"
-              ><svg class="icon-label person" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </label>
-            <input id="name" type="text" name="userName" class="input-modal" />
-          </div>
-          <div role="group" class="form-group" aria-labelledby="tel-form">
-            <p id="tel-form">telefon</p>
-            <label class="testfocus" for="telephon"
-              ><svg class="icon-label phone" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </label>
-            <input
-              id="telephone"
-              type="tel"
-              name="userPhone"
-              class="input-modal"
-            />
-          </div>
-          <div role="group" class="form-group" aria-labelledby="email-form">
-            <p id="email-form">email</p>
-            <label for="emailaddress">
-              <svg class="icon-label email" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </label>
-            <input
-              id="emailaddress"
-              type="email"
-              name="userEmail"
-              class="input-modal"
-            />
-          </div>
-          <div role="group" class="form-group" aria-labelledby="review-form">
-            <p id="review-form">komentarz</p>
-            <label for="reviewarea"></label>
-            <textarea
-              class="textarea-form"
-              id="reviewarea"
-              placeholder="Wprowadź tekst"
-              name="userReview"
-            ></textarea>
-          </div>
-          <div
-            role="group"
-            class="form-group"
-            aria-labelledby="acceptance-form"
+          <label for="name"
+            >imię<svg class="icon-label person" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+          <input id="name" type="text" name="userName" class="input-modal" />
+
+          <label for="telephon"
+            >telefon<svg class="icon-label phone" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <input
+            id="telephone"
+            type="tel"
+            name="userPhone"
+            class="input-modal"
+          />
+          <label for="emailaddress"
+            >email
+            <svg class="icon-label email" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <input
+            id="emailaddress"
+            type="email"
+            name="userEmail"
+            class="input-modal"
+          />
+          <label for="reviewarea">komentarz</label>
+          <textarea
+            class="textarea-form"
+            id="reviewarea"
+            placeholder="Wprowadź tekst"
+            name="userReview"
+          ></textarea>
+
+          <input
+            class="box-rules"
+            id="acceptance-rules"
+            type="checkbox"
+            name="acceptanceOfTheRules"
+          />
+          <label for="acceptance-rules" class="label-rules"
+            >oświadczam, iż akceptuję <span>regulamin</span> i
+            <span>politykę prywatności</span></label
           >
-            <p id="acceptance-form"></p>
-            <input
-              class="box-rules"
-              id="acceptance-rules"
-              type="checkbox"
-              name="acceptanceOfTheRules"
-            />
-            <label for="acceptance-rules" class="label-rules"
-              >oświadczam, iż akceptuję <span>regulamin</span> i
-              <span>politykę prywatności</span></label
-            >
-            <!--  <svg class="test-icon" width="30px" height="30px">
+          <!--  <svg class="test-icon" width="30px" height="30px">
             <use href="./images/icons.svg#icon-check-only2"></use>
           </svg>
           <svg class="test-icon" width="30px" height="30px">
@@ -492,7 +477,6 @@
           <svg class="test-icon" width="30px" height="30px">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg> -->
-          </div>
           <!-- <button type="submit">wyślij</button> -->
         </form>
       </div>
