@@ -79,6 +79,7 @@ body {
 .nav-flex {
   display: flex;
 }
+.form-button,
 .footer-background button,
 .section-slogan button {
   color: var(--background-color-primary, #ffffff);
