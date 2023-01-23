@@ -627,7 +627,7 @@ button::first-letter {
   height: 40px;
   margin: 10px 40px 25px 40px;
 }
-.form-group > p {
+.label-modal {
   text-transform: capitalize;
   font-size: 12px;
   color: var(--font-color-secondary);
