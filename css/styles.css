@@ -76,7 +76,6 @@ body {
 .link-nav:hover .icon-nav {
   fill: var(--font-color-action);
 }
-
 .nav-flex {
   display: flex;
 }
@@ -625,6 +624,7 @@ klasa icon-label-modal wrzucona do <label> */
   display: block;
   position: absolute;
   left: 52px;
+  fill: var(--font-color-primary);
 }
 .person {
   top: 110px;
@@ -680,4 +680,12 @@ klasa icon-label-modal wrzucona do <label> */
   border: 1px solid #21212133;
   border-radius: 4px;
   font-size: 16px;
+  padding-left: 42px;
+}
+.input-modal:focus,
+.icon-label:focus,
+.textarea-form:focus {
+  border: 1px solid var(--font-color-action);
+  fill: var(--font-color-action);
+  outline: none;
 }
