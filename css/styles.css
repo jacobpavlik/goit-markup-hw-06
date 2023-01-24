@@ -221,6 +221,7 @@ button::first-letter {
 .card__footer {
   color: var(--background-color-primary);
 }
+.label-rules,
 .card__info {
   font-size: 14px;
   line-height: 1.71;
@@ -237,6 +238,8 @@ button::first-letter {
   text-align: center;
   padding-bottom: 50px;
 }
+.label-rules::first-letter,
+.modal-form-header::first-letter,
 .section-work__header::first-letter,
 .section-team__header::first-letter,
 .section-clients__header::first-letter {
@@ -568,6 +571,7 @@ button::first-letter {
   letter-spacing: 0.16;
   border: 1px solid #21212133;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 .box-rules {
   appearance: none;
@@ -575,7 +579,8 @@ button::first-letter {
 .label-rules {
   position: relative;
   cursor: pointer;
-  margin-right: 54px;
+  align-self: center;
+  margin-bottom: 30px;
 }
 .label-rules::before {
   display: block;
@@ -600,7 +605,7 @@ button::first-letter {
   display: block;
   position: absolute;
   left: 15px;
-  top: 38px;
+  top: 30px;
   fill: var(--font-color-primary);
 }
 .test-icon {
@@ -628,11 +633,8 @@ button::first-letter {
   color: var(--font-color-secondary);
   line-height: 1.17;
   letter-spacing: 0.16;
-  padding: 10px 0 4px;
+  margin-bottom: 4px;
   position: relative;
-}
-.modal-form-header::first-letter {
-  text-transform: uppercase;
 }
 .modal-form-header {
   font-weight: 700;
@@ -646,6 +648,7 @@ button::first-letter {
   border-radius: 4px;
   font-size: 16px;
   padding-left: 42px;
+  margin-bottom: 10px;
 }
 .input-modal:focus,
 .icon-label:focus,
@@ -657,4 +660,18 @@ button::first-letter {
 .button-form {
   padding: 10px 76px;
   display: block;
+  max-width: 250px;
+  align-self: center;
+}
+.form-modal {
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.48px;
+  color: var(--font-color-action);
 }
