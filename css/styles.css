@@ -79,7 +79,7 @@ body {
 .nav-flex {
   display: flex;
 }
-.form-button,
+.button-form,
 .footer-background button,
 .section-slogan button {
   color: var(--background-color-primary, #ffffff);
@@ -429,7 +429,7 @@ button::first-letter {
   top: 0;
   right: 0;
 } */
-.close-button {
+.button-close {
   outline: 1px solid #0000001a;
   border: #0000001a;
   border-radius: 50%;
@@ -622,11 +622,6 @@ button::first-letter {
   align-items: center;
   justify-content: center;
 }
-.form-group {
-  width: 448px;
-  height: 40px;
-  margin: 10px 40px 25px 40px;
-}
 .label-modal {
   text-transform: capitalize;
   font-size: 12px;
@@ -658,4 +653,6 @@ button::first-letter {
   border: 1px solid var(--font-color-action);
   fill: var(--font-color-action);
   outline: none;
+}
+.button-form {
 }
