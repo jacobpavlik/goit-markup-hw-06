@@ -655,4 +655,6 @@ button::first-letter {
   outline: none;
 }
 .button-form {
+  padding: 10px 76px;
+  display: block;
 }
