@@ -421,17 +421,6 @@ button::first-letter {
   padding: 6px;
   margin: 0;
 }
-/*.window button {
-  outline: 1px solid #0000001a;
-  border: #0000001a;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin: 8px;
-  position: absolute;
-  top: 0;
-  right: 0;
-} */
 .button-close {
   outline: 1px solid #0000001a;
   border: #0000001a;
@@ -581,6 +570,7 @@ button::first-letter {
   cursor: pointer;
   align-self: center;
   margin-bottom: 30px;
+  margin-left: 7px;
 }
 .label-rules::before {
   display: block;
@@ -595,11 +585,12 @@ button::first-letter {
 }
 .box-rules:checked + .label-rules::before {
   background-color: var(--font-color-action);
-  background-image: url(../images/icons.svg#icon-check-only2);
+  background-image: url("../images/Vector.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid var(--font-color-action);
+  fill: var(--background-color-primary);
 }
 .icon-label {
   display: block;
@@ -607,11 +598,6 @@ button::first-letter {
   left: 15px;
   top: 30px;
   fill: var(--font-color-primary);
-}
-.test-icon {
-  fill: blue;
-  /* color: red; */
-  /* outline: green; */
 }
 .footer-input {
   padding: 15px 150px 15px 16px;
@@ -657,6 +643,46 @@ button::first-letter {
   fill: var(--font-color-action);
   outline: none;
 }
+/* NIEUDANE FOCUSY IKON
+.icon-label:focus-visible,
+.icon-label:focus-within,
+.icon-label:focus {
+  fill: var(--font-color-action);
+  color: red;
+  border: 1px solid red;
+  background-color: red;
+} */
+.label-modal:focus .icon-label,
+.label-modal:focus > .icon-label {
+  fill: red;
+  background-color: green;
+}
+.input-modal:focus-within + .icon-label,
+.input-modal:focus .icon-label,
+.input-modal:focus > .icon-label {
+  fill: red;
+  background-color: green;
+}
+.input-modal:focus-within + .icon-label {
+  fill: var(--font-color-action);
+}
+.icon-modal:focus-within + .label-modal,
+.icon-modal:focus + .label-modal,
+.icon-modal:focus-within + .input-modal,
+.icon-modal:focus + .input-modal,
+.input-modal:focus-within + .icon-modal,
+.input-modal:focus + .icon-modal,
+.label-modal:focus-within + .icon-modal,
+.label-modal:focus + .icon-modal,
+.form-modal:focus-within + .label-modal,
+.form-modal:focus + .label-modal,
+.form-modal:focus-within + .input-modal,
+.form-modal:focus + .input-modal,
+.form-modal:focus-within + .icon-label,
+.form-modal:focus + .icon-label {
+  fill: red;
+}
+/*KONIEC NIEUDANYCH PRÓB*/
 .button-form {
   padding: 10px 76px;
   display: block;
