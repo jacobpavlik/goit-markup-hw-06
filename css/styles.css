@@ -562,6 +562,9 @@ button::first-letter {
   border-radius: 4px;
   margin-bottom: 20px;
 }
+.textarea-form::placeholder {
+  color: #75757580;
+}
 .box-rules {
   appearance: none;
 }
