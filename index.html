@@ -418,34 +418,36 @@
             zostaw swoje dane w formularzu poniżej
           </h3>
           <label for="name" class="label-modal"
-            >imię<svg class="icon-label" width="18px" height="18px">
+            >imię
+            <input id="name" type="text" name="userName" class="input-modal" />
+            <svg class="icon-label" width="18px" height="18px">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </label>
-          <input id="name" type="text" name="userName" class="input-modal" />
           <label for="telephon" class="label-modal"
-            >telefon<svg class="icon-label" width="18px" height="18px">
+            >telefon
+            <input
+              id="telephone"
+              type="tel"
+              name="userPhone"
+              class="input-modal"
+            />
+            <svg class="icon-label" width="18px" height="18px">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </label>
-          <input
-            id="telephone"
-            type="tel"
-            name="userPhone"
-            class="input-modal"
-          />
           <label for="emailaddress" class="label-modal"
             >email
+            <input
+              id="emailaddress"
+              type="email"
+              name="userEmail"
+              class="input-modal"
+            />
             <svg class="icon-label" width="18px" height="18px">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </label>
-          <input
-            id="emailaddress"
-            type="email"
-            name="userEmail"
-            class="input-modal"
-          />
           <label for="reviewarea" class="label-modal">komentarz</label>
           <textarea
             class="textarea-form"

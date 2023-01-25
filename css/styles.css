@@ -596,7 +596,7 @@ button::first-letter {
   display: block;
   position: absolute;
   left: 15px;
-  top: 30px;
+  top: 25px;
   fill: var(--font-color-primary);
 }
 .footer-input {
@@ -643,46 +643,9 @@ button::first-letter {
   fill: var(--font-color-action);
   outline: none;
 }
-/* NIEUDANE FOCUSY IKON
-.icon-label:focus-visible,
-.icon-label:focus-within,
-.icon-label:focus {
-  fill: var(--font-color-action);
-  color: red;
-  border: 1px solid red;
-  background-color: red;
-} */
-.label-modal:focus .icon-label,
-.label-modal:focus > .icon-label {
-  fill: red;
-  background-color: green;
-}
-.input-modal:focus-within + .icon-label,
-.input-modal:focus .icon-label,
-.input-modal:focus > .icon-label {
-  fill: red;
-  background-color: green;
-}
-.input-modal:focus-within + .icon-label {
+.input-modal:focus + .icon-label {
   fill: var(--font-color-action);
 }
-.icon-modal:focus-within + .label-modal,
-.icon-modal:focus + .label-modal,
-.icon-modal:focus-within + .input-modal,
-.icon-modal:focus + .input-modal,
-.input-modal:focus-within + .icon-modal,
-.input-modal:focus + .icon-modal,
-.label-modal:focus-within + .icon-modal,
-.label-modal:focus + .icon-modal,
-.form-modal:focus-within + .label-modal,
-.form-modal:focus + .label-modal,
-.form-modal:focus-within + .input-modal,
-.form-modal:focus + .input-modal,
-.form-modal:focus-within + .icon-label,
-.form-modal:focus + .icon-label {
-  fill: red;
-}
-/*KONIEC NIEUDANYCH PRÓB*/
 .button-form {
   padding: 10px 76px;
   display: block;
