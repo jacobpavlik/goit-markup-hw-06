@@ -147,13 +147,14 @@ button::first-letter {
   background-color: var(--background-color-secondary, #2f303a);
 }
 .image-bg {
-  margin: 0 auto;
-  width: 1600px;
+  /* margin: 0 auto; */
+  /* width: 1600px; */
   height: 600px;
   background-image: url("../images/img-overlay.png"),
     url("../images/img-bg.png");
   background-repeat: no-repeat;
-  background-position: cover;
+  background-size: cover;
+  background-position: center;
 }
 .footer-background {
   padding: 60px 0;
