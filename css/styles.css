@@ -15,9 +15,6 @@
   margin: 0;
   padding: 0;
 }
-/* svg {
-  color: var(--font-color-active);
-} */
 a {
   text-decoration: none;
 }
@@ -66,7 +63,6 @@ body {
 }
 .list-format {
   font-size: 14px;
-  font-style: normal;
 }
 .link-nav:focus,
 .link-nav:hover {
@@ -161,7 +157,6 @@ button::first-letter {
 }
 .footer-background {
   padding: 60px 0;
-  /* background-color: var(--background-color-secondary, #2f303a); */
 }
 .section-slogan {
   text-align: center;
@@ -588,7 +583,7 @@ button::first-letter {
 }
 .box-rules:checked + .label-rules::before {
   background-color: var(--font-color-action);
-  background-image: url("../images/Vector.svg");
+  background-image: url("../images/checkmark.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
